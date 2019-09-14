@@ -1,10 +1,17 @@
 import React from 'react'
 
-export default function CharacterItem  (props) {
-    console.log(props);
+export default function CharacterItem  ({ character, name }) {
+
+
     return (
         <div>
-            <p>soy un item</p>
+            <img src={character.image} alt=""/>
+            <h4>{character.name}</h4>
+            <p>{character.status}</p>
+            <p>{character.gender}</p>
+            <p>{character.origin.name}</p>
         </div>
-    )
+    );
 }
+
+// export defalut CharacterItem;

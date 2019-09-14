@@ -23,8 +23,15 @@ export default class Charactercontainer extends Component {
     
     render() {
         return (
-
-            <CharacterItem  ></CharacterItem>
+        <>
+            {
+                this.state.characters.map(
+                    char => <CharacterItem character={char} ></CharacterItem>
+                )
+            
+            }
+         </>   
+        
         )
     }
 }
